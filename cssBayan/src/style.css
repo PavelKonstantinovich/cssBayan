@@ -10,10 +10,22 @@ body {
   background-color: antiquewhite;
 }
 
-main {
-  /* text-align: center; */
+header {
+  padding: 40px 0 20px;
+  text-align: center;
+}
 
+main {
   color: rgb(0, 140, 255);
+}
+
+.planet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mark {
+  width: 20px;
 }
 
 .container {
@@ -26,8 +38,13 @@ main {
   background-color: rgb(245, 235, 222);
 }
 
-.planets:hover>.planet {
-  background: #D6E7D2 url(./img/plus.svg) no-repeat 400px;
+.planets:hover>div>div {
+  background: url(./img/plus.svg) no-repeat;
+}
+
+.planet:hover>.mark {
+
+  background: url(./img/xmark.svg) no-repeat;
 }
 
 .planets>.mercury:hover {
@@ -75,13 +92,11 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 20px; */
 }
 
 
 .school,
 .github {
   max-width: 120px;
-  /* display: block; */
   padding: 20px 0;
 }
