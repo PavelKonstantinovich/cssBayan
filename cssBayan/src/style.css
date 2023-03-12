@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+main {
+  /* text-align: center; */
+
+  color: rgb(0, 140, 255);
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.planets:hover {
+  color: #000;
+  background-color: rgb(245, 235, 222);
+}
+
+.planets:hover>.planet {
+  background: #D6E7D2 url(./img/plus.svg) no-repeat 400px;
+}
+
+.planets>.mercury:hover {
+  height: 500px;
+  background: center/40% url(img/mercury.png) no-repeat;
+}
+
+.planets>.venos:hover {
+  height: 500px;
+  background: center/40% url(img/venos.png) no-repeat;
+}
+
+.planets>.mars:hover {
+  height: 500px;
+  background: center/40% url(img/mars.png) no-repeat;
+}
+
+.planets>.earth:hover {
+  height: 500px;
+  background: center/40% url(img/earth.png) no-repeat;
+}
+
+.planets>.jupiter:hover {
+  height: 500px;
+  background: center/40% url(img/jupiter.png) no-repeat;
+}
+
+.planets>.saturn:hover {
+  height: 500px;
+  background: center/50% url(img/saturn.png) no-repeat;
+}
+
+.planets>.uranus:hover {
+  height: 500px;
+  background: center/60% url(img/uranus.png) no-repeat;
+}
+
+.planets>.neptune:hover {
+  height: 500px;
+  background: center/40% url(img/neptune.png) no-repeat;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+
+.school,
+.github {
+  max-width: 120px;
+  /* display: block; */
+  padding: 20px 0;
+}
