@@ -2,16 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Russo One', sans-serif;
-
-}
+ }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
   background-color: antiquewhite;
+     font-family: 'Russo One', sans-serif;
+     font-size: 2vw;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
 
 main {
   color: rgb(0, 140, 255);
+  height: 100%;
 }
 
 .planet {
@@ -40,7 +42,6 @@ main {
 .planets:hover {
   cursor: pointer;
   color: #000;
-  background-color: rgb(245, 235, 222);
   transition: all 0.7s;
 }
 
@@ -49,7 +50,7 @@ main {
 }
 
 .planet:hover {
-  height: 500px;
+  height: 60vh;
   cursor: pointer;
   transition: all 0.7s;
 }
@@ -98,9 +99,26 @@ main {
   align-items: center;
 }
 
-
 .school,
 .github {
-  max-width: 120px;
+  max-width: 15vw;
   padding: 20px 0;
 }
+
+@media (max-width: 1400px) {
+ .container {
+  width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .planet:hover{
+    height: 50vh;
+   }
+ }
+ 
+@media (max-width: 900px) {
+  .planet:hover{
+    height: 25vh;
+   }
+ }
