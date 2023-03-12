@@ -6,6 +6,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: antiquewhite;
 }
@@ -34,56 +38,56 @@ main {
 }
 
 .planets:hover {
+  cursor: pointer;
   color: #000;
   background-color: rgb(245, 235, 222);
+  transition: all 0.7s;
 }
 
 .planets:hover>div>div {
   background: url(./img/plus.svg) no-repeat;
 }
 
-.planet:hover>.mark {
+.planet:hover {
+  height: 500px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
 
+.planet:hover>.mark {
+  cursor: pointer;
   background: url(./img/xmark.svg) no-repeat;
 }
 
 .planets>.mercury:hover {
-  height: 500px;
   background: center/40% url(img/mercury.png) no-repeat;
 }
 
 .planets>.venos:hover {
-  height: 500px;
   background: center/40% url(img/venos.png) no-repeat;
 }
 
 .planets>.mars:hover {
-  height: 500px;
   background: center/40% url(img/mars.png) no-repeat;
 }
 
 .planets>.earth:hover {
-  height: 500px;
   background: center/40% url(img/earth.png) no-repeat;
 }
 
 .planets>.jupiter:hover {
-  height: 500px;
   background: center/40% url(img/jupiter.png) no-repeat;
 }
 
 .planets>.saturn:hover {
-  height: 500px;
   background: center/50% url(img/saturn.png) no-repeat;
 }
 
 .planets>.uranus:hover {
-  height: 500px;
   background: center/60% url(img/uranus.png) no-repeat;
 }
 
 .planets>.neptune:hover {
-  height: 500px;
   background: center/40% url(img/neptune.png) no-repeat;
 }
 
