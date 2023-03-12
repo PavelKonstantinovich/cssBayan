@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- }
+}
 
 html {
   scroll-behavior: smooth;
@@ -11,8 +11,8 @@ html {
 
 body {
   background-color: antiquewhite;
-     font-family: 'Russo One', sans-serif;
-     font-size: 2vw;
+  font-family: 'Russo One', sans-serif;
+  font-size: 2vw;
 }
 
 header {
@@ -21,13 +21,14 @@ header {
 }
 
 main {
-  color: rgb(0, 140, 255);
+  color: rgb(59, 61, 63);
   height: 100%;
 }
 
 .planet {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid rgb(164, 165, 167);
 }
 
 .mark {
@@ -45,50 +46,61 @@ main {
   transition: all 0.7s;
 }
 
-.planets:hover>div>div {
+.planets:hover>label>div>div {
   background: url(./img/plus.svg) no-repeat;
 }
 
-.planet:hover {
+.planet:hover,
+input:checked+label>.planet {
   height: 60vh;
   cursor: pointer;
   transition: all 0.7s;
+  color: #000;
 }
 
-.planet:hover>.mark {
+.planet:hover>.mark,
+input:checked+label>.planet>.mark {
   cursor: pointer;
   background: url(./img/xmark.svg) no-repeat;
 }
 
-.planets>.mercury:hover {
+.planets>label>.mercury:hover,
+input:checked+label>.mercury {
   background: center/40% url(img/mercury.png) no-repeat;
 }
 
-.planets>.venos:hover {
+.planets>label>.venos:hover,
+input:checked+label>.venos {
   background: center/40% url(img/venos.png) no-repeat;
 }
 
-.planets>.mars:hover {
+.planets>label>.mars:hover,
+input:checked+label>.mars {
   background: center/40% url(img/mars.png) no-repeat;
 }
 
-.planets>.earth:hover {
+.planets>label>.earth:hover,
+input:checked+label>.earth {
   background: center/40% url(img/earth.png) no-repeat;
 }
 
-.planets>.jupiter:hover {
+.planets>label>.jupiter:hover,
+input:checked+label>.jupiter {
   background: center/40% url(img/jupiter.png) no-repeat;
 }
 
-.planets>.saturn:hover {
+.planets>label>.saturn:hover,
+input:checked+label>.saturn {
   background: center/50% url(img/saturn.png) no-repeat;
 }
 
-.planets>.uranus:hover {
+.planets>label>.uranus:hover,
+input:checked+label>.uranus {
   background: center/60% url(img/uranus.png) no-repeat;
 }
 
-.planets>.neptune:hover {
+.planets>label>.neptune:hover,
+input:checked+label>.neptune {
   background: center/40% url(img/neptune.png) no-repeat;
 }
 
@@ -106,19 +118,19 @@ main {
 }
 
 @media (max-width: 1400px) {
- .container {
-  width: 80%;
+  .container {
+    width: 80%;
   }
 }
 
 @media (max-width: 1200px) {
-  .planet:hover{
+  .planet:hover {
     height: 50vh;
-   }
- }
- 
+  }
+}
+
 @media (max-width: 900px) {
-  .planet:hover{
+  .planet:hover {
     height: 25vh;
-   }
- }
+  }
+}
