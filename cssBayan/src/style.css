@@ -124,13 +124,15 @@ input:checked+label>.neptune {
 }
 
 @media (max-width: 1200px) {
-  .planet:hover {
+  .planet:hover,
+  input:checked+label>.planet {
     height: 50vh;
   }
 }
 
 @media (max-width: 900px) {
-  .planet:hover {
+  .planet:hover,
+  input:checked+label>.planet {
     height: 25vh;
   }
 }
